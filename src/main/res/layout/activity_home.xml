@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <ImageView
+        android:id="@+id/imagesejabemvindo"
+        android:layout_width="413dp"
+        android:layout_height="66dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sejabemvindo" />
+
+    <TextView
+        android:id="@+id/textSejabemvindo"
+        android:layout_width="383dp"
+        android:layout_height="66dp"
+        android:text="Seja bem vindo ao nosso aplicativo."
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imagesejabemvindo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="412dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagesejabemvindo"
+        app:srcCompat="@drawable/imgnoticias" />
+
+    <TextView
+        android:id="@+id/textmantenhaseinformado"
+        android:layout_width="232dp"
+        android:layout_height="22dp"
+        android:text="Mantenha-se informado"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="338dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35"
+        app:srcCompat="@drawable/linhaseparar" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="412dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#3F51B5"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="175dp"
+        android:layout_height="33dp"
+        android:text="Nossos serviços "
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageNutricao"
+        android:layout_width="365dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="imageNutricao"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageHolistica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NUTRIÇÃO"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/imageHolistica"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <ImageView
+        android:id="@+id/imageMusicoterapia"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageHolistica"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <ImageView
+        android:id="@+id/imageFonoaudiologia"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMusicoterapia"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <ImageView
+        android:id="@+id/imagePsicologia"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="15dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toTopOf="@+id/imagePsicopedagogia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFonoaudiologia"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <ImageView
+        android:id="@+id/imagePsicopedagogia"
+        android:layout_width="365dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePsicologia"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOLÍSTICA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageHolistica"
+        app:layout_constraintEnd_toEndOf="@+id/imageHolistica"
+        app:layout_constraintStart_toStartOf="@+id/imageHolistica"
+        app:layout_constraintTop_toTopOf="@+id/imageHolistica" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUSICOTERAPIA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageMusicoterapia"
+        app:layout_constraintEnd_toEndOf="@+id/imageMusicoterapia"
+        app:layout_constraintStart_toStartOf="@+id/imageMusicoterapia"
+        app:layout_constraintTop_toTopOf="@+id/imageMusicoterapia" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FONOAUDIOLOGIA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFonoaudiologia"
+        app:layout_constraintEnd_toEndOf="@+id/imageFonoaudiologia"
+        app:layout_constraintStart_toStartOf="@+id/imageFonoaudiologia"
+        app:layout_constraintTop_toTopOf="@+id/imageFonoaudiologia" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PSICOLOGIA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePsicologia"
+        app:layout_constraintEnd_toEndOf="@+id/imagePsicologia"
+        app:layout_constraintStart_toStartOf="@+id/imagePsicologia"
+        app:layout_constraintTop_toTopOf="@+id/imagePsicologia" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PSICOPEDAGOGIA"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePsicopedagogia"
+        app:layout_constraintEnd_toEndOf="@+id/imagePsicopedagogia"
+        app:layout_constraintStart_toStartOf="@+id/imagePsicopedagogia"
+        app:layout_constraintTop_toTopOf="@+id/imagePsicopedagogia" />
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="343dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/icone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

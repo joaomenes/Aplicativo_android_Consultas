@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psicopedagogia">
+
+    <Button
+        android:id="@+id/buttonOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#64BED9"
+        android:text="CONSULTA ONLINE"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPresencial" />
+
+    <Button
+        android:id="@+id/buttonPresencial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#64BED9"
+        android:text="Consulta Presencial"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:srcCompat="@drawable/linhaseparar" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="O que é a Psicopedagogia?"
+        android:textColor="#64BED9"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResumoprofissional4"
+        app:srcCompat="@drawable/linhaseparar" />
+
+    <TextView
+        android:id="@+id/textResumoprofissional4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Resumo da profissão."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeprofissional4" />
+
+    <TextView
+        android:id="@+id/textNomeprofissional4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nome da profissional"
+        android:textColor="#64BED9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagefotoprofissional4" />
+
+    <ImageView
+        android:id="@+id/imagefotoprofissional4"
+        android:layout_width="145dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fotoperfil" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="121dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/iconepsicologia" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="300dp"
+        android:layout_height="213dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22"
+        app:srcCompat="@drawable/textopsicopedagogia" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

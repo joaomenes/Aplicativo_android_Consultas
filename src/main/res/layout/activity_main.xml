@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_height="match_parent"
+android:layout_width="match_parent">
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundlogin"
+        android:layout_width="324dp"
+        android:layout_height="545dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backgroundlogin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundlogin"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toTopOf="@+id/backgroundlogin"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageView
+        android:id="@+id/linha_azul_abaixo_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/linha_azul_abaixo_login" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Digite seu E-mail"
+        android:inputType="textEmailAddress"
+        android:onClick="textEmail"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/linha_azul_abaixo_login" />
+
+    <EditText
+        android:id="@+id/texsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:onClick="texsenha"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Esqueci a senha"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/texsenha" />
+
+    <ImageView
+        android:id="@+id/botaologar"
+        android:layout_width="235dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="15dp"
+        android:onClick="botaologar"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/botao_logar" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OU"
+        android:textSize="18sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/botaologar" />
+
+    <ImageView
+        android:id="@+id/botao_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/botao_face" />
+
+    <ImageView
+        android:id="@+id/botao_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/botao_face"
+        app:srcCompat="@drawable/botao_google" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Ainda não tem uma conta?"
+        android:textSize="12sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/botao_google" />
+
+    <ImageView
+        android:id="@+id/fundoinfo"
+        android:layout_width="372dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/backgroundlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/fundoinfo" />
+
+    <TextView
+        android:id="@+id/textBemvindo"
+        android:layout_width="383dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Faça o login ou cadastre-se para realizar o agendamento de uma consulta"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="@+id/fundoinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fundoinfo"
+        app:layout_constraintTop_toTopOf="@+id/fundoinfo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/botaoCadastrese"
+        android:layout_width="88dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/botao_cadastrese"
+        android:onClick="botaocadastrese"
+        app:layout_constraintBottom_toBottomOf="@+id/textView7"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundlogin"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="@+id/backgroundlogin"
+        app:layout_constraintTop_toBottomOf="@+id/botao_google"
+        app:layout_constraintVertical_bias="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cadastro">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="334dp"
+        android:layout_height="695dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retangulo_cinza_cadastro" />
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Cadastro"
+        android:textSize="30sp"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/textNomeCompleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nome  completo"
+        android:inputType="text"
+        android:onClick="textNomeCompleto"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/cadastro"
+        app:srcCompat="@drawable/linha_azul_abaixo_cadastro" />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:onClick="textEmail"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeCompleto" />
+
+    <EditText
+        android:id="@+id/textemailconfrimacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Confirme seu E-mail"
+        android:inputType="textEmailAddress"
+        android:onClick="textextmailconfrimacao"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail" />
+
+    <EditText
+        android:id="@+id/texsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:onClick="texsenha"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textemailconfrimacao" />
+
+    <EditText
+        android:id="@+id/textsenhaconfirmacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Confirme sua senha"
+        android:inputType="textPassword"
+        android:onClick="textsenhaconfirmacao"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/texsenha" />
+
+    <EditText
+        android:id="@+id/textcpf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CPF"
+        android:inputType="number"
+        android:onClick="textcpf"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textsenhaconfirmacao" />
+
+    <EditText
+        android:id="@+id/texttelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Telefone"
+        android:inputType="phone"
+        android:onClick="texttelefone"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textcpf" />
+
+    <EditText
+        android:id="@+id/textcep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="textPostalAddress"
+        android:onClick="textcep"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/texttelefone" />
+
+    <EditText
+        android:id="@+id/textnacionalidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Nacionalidade"
+        android:inputType="text"
+        android:onClick="textnacionalidade"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textcep" />
+
+    <ImageView
+        android:id="@+id/botao_cadastro"
+        android:layout_width="251dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:onClick="botao_cadastro"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textnacionalidade"
+        app:srcCompat="@drawable/botao_cadastro" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="OU"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/botao_cadastro" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="211dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/botao_face" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="177dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/botao_google" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

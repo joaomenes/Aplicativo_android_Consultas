@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".psicologia">
+
+    <Button
+        android:id="@+id/buttonPresencial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#64BED9"
+        android:text="Consulta Presencial"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <Button
+        android:id="@+id/buttonOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#64BED9"
+        android:text="CONSULTA ONLINE"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPresencial" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@drawable/linhaseparar" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="O que é a Psicologia?"
+        android:textColor="#64BED9"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textResumoprofissional2"
+        app:srcCompat="@drawable/linhaseparar" />
+
+    <TextView
+        android:id="@+id/textResumoprofissional2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Resumo da profissão."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeprofissional2" />
+
+    <ImageView
+        android:id="@+id/imagefotoprofissional3"
+        android:layout_width="145dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fotoperfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textNomeprofissional2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nome da profissional"
+        android:textColor="#64BED9"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagefotoprofissional3" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="121dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/iconepsicologia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="377dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/textopsicologia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
